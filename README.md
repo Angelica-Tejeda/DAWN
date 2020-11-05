@@ -20,13 +20,13 @@ https://inproteinwetrust.invisionapp.com/prototype/prototipo1-ckh5bm811005jsg01i
 
 # Enlace a la plantilla de bootstrap
 
-## Plantilla principal
+- ## Plantilla principal
 https://startbootstrap.com/previews/agency
 
 
-## Alternativa #1
+- ## Alternativa #1
 
 https://w3layouts.com/preview/?l=/grilling-restaurant-category-bootstrap-responsive-web-template/
 
 
-## Alternativa #2
+- ## Alternativa #2
