@@ -3,6 +3,7 @@
 # Intregrantes
 
 - Angélica Tejeda
+- Daniel Sanchez 
 
 #Descripción
 
