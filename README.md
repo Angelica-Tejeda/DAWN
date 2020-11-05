@@ -4,6 +4,7 @@
 
 - Angélica Tejeda
 - Daniel Sanchez 
+- Karla Castro
 
 # Descripción
 
