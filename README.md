@@ -5,6 +5,7 @@
 - Angélica Tejeda
 - Daniel Sanchez 
 - Karla Castro
+- Luis Sanchez
 
 # Descripción
 
