@@ -34,3 +34,8 @@ https://w3layouts.com/preview/?l=/grilling-restaurant-category-bootstrap-respons
 
 - ## Alternativa #2
 https://startbootstrap.com/themes/freelancer/
+
+# Recursos adicionales
+
+## Recurso para agregar mapas: https://leafletjs.com
+## Recurso para la galeria de fotos: https://lokeshdhakar.com/projects/lightbox2/#examples
