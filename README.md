@@ -17,9 +17,11 @@
 
 # Enlace al diseño
 
-https://inproteinwetrust.invisionapp.com/prototype/prototipo1-ckh5bm811005jsg01iw2ey82c
+- ## Prototipo
+https://lcsanchez27.wixsite.com/prototipodawn
 
-  - Diseño que nos proporcionó el usuario como guía: https://github.com/Angelica-Tejeda/DAWN/blob/main/img/EjemploDisenioHechoPorElUsuario.jpeg
+-## Diseño proporcionado por el cliente como guía
+https://github.com/Angelica-Tejeda/DAWN/blob/main/img/EjemploDisenioHechoPorElUsuario.jpeg
 
 
 # Enlace a la plantilla de bootstrap
@@ -29,7 +31,6 @@ https://startbootstrap.com/previews/agency
 
 
 - ## Alternativa #1
-
 https://w3layouts.com/preview/?l=/grilling-restaurant-category-bootstrap-responsive-web-template/
 
 
