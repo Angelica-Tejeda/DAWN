@@ -37,5 +37,5 @@ https://startbootstrap.com/themes/freelancer/
 
 # Recursos adicionales
 
-## Recurso para agregar mapas: https://leafletjs.com
-## Recurso para la galeria de fotos: https://lokeshdhakar.com/projects/lightbox2/#examples
+  - ## Recurso para agregar mapas: https://leafletjs.com
+  - ## Recurso para la galeria de fotos: https://lokeshdhakar.com/projects/lightbox2/#examples
