@@ -20,7 +20,7 @@
 - ## Prototipo
 https://lcsanchez27.wixsite.com/prototipodawn
 
--## Diseño proporcionado por el cliente como guía
+- ## Diseño proporcionado por el cliente como guía
 https://github.com/Angelica-Tejeda/DAWN/blob/main/img/EjemploDisenioHechoPorElUsuario.jpeg
 
 
