@@ -1,6 +1,6 @@
 # Nombre del grupo: Game of Threads
 
-## Intregrantes
+## Integrantes
 
 - Angélica Tejeda
 - Daniel Sanchez 
