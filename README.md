@@ -18,6 +18,8 @@
 
 https://inproteinwetrust.invisionapp.com/prototype/prototipo1-ckh5bm811005jsg01iw2ey82c
 
+  -Diseño que nos proporcionó el usuario como guía: https://github.com/Angelica-Tejeda/DAWN/blob/main/img/EjemploDisenioHechoPorElUsuario.jpeg
+
 
 # Enlace a la plantilla de bootstrap
 
