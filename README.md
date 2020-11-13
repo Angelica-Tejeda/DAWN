@@ -1,10 +1,11 @@
 # Nombre del grupo: Game of Threads
 
-## Intregrantes
+## Integrantes
 
 - Angélica Tejeda
 - Daniel Sanchez 
 - Karla Castro
+- Luis Sanchez
 
 # Descripción
 
@@ -16,7 +17,11 @@
 
 # Enlace al diseño
 
-https://inproteinwetrust.invisionapp.com/prototype/prototipo1-ckh5bm811005jsg01iw2ey82c
+- ## Prototipo
+https://lcsanchez27.wixsite.com/prototipodawn
+
+- ## Diseño proporcionado por el cliente como guía
+https://github.com/Angelica-Tejeda/DAWN/blob/main/img/EjemploDisenioHechoPorElUsuario.jpeg
 
 
 # Enlace a la plantilla de bootstrap
@@ -26,9 +31,13 @@ https://startbootstrap.com/previews/agency
 
 
 - ## Alternativa #1
-
 https://w3layouts.com/preview/?l=/grilling-restaurant-category-bootstrap-responsive-web-template/
 
 
 - ## Alternativa #2
 https://startbootstrap.com/themes/freelancer/
+
+# Recursos adicionales
+
+  - ## Recurso para agregar mapas: https://leafletjs.com
+  - ## Recurso para la galeria de fotos: https://lokeshdhakar.com/projects/lightbox2/#examples
