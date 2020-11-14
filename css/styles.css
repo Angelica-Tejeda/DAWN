@@ -76,7 +76,7 @@ body {
   line-height: 1.5;
   color: white;
   text-align: left;
-  background-color: var(--gray-dark);
+  background-color: #121212;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -7042,14 +7042,14 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
+.bg-our-gray {
+  background-color: #1F2021 !important;
 }
 
-a.bg-light:hover,
-a.bg-light:focus,
-button.bg-light:hover,
-button.bg-light:focus {
+a.bg-our-gray:hover,
+a.bg-our-gray:focus,
+button.bg-our-gray:hover,
+button.bg-our-gray:focus {
   background-color: #dae0e5 !important;
 }
 
