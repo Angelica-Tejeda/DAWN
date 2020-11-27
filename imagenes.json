@@ -1,0 +1,24 @@
+{
+    "recurso": {
+      "imagen": [
+        { "src": "img/bar.JPG" },
+        { "src": "img/batidoConOreo.JPG" },
+        { "src": "img/batidoFru.JPG" },
+        { "src": "img/batidoFru2.JPG" },
+        { "src": "img/Bottellas.JPG" },
+        { "src": "img/local.JPG" },
+        { "src": "img/local2.JPG" },
+        { "src": "img/TE1.JPG" },
+        { "src": "img/te2.JPG" },
+        { "src": "img/teConFondo.JPG" },
+        { "src": "img/TeDeMenta.JPG" },
+        { "src": "img/TeRojo.JPG" },
+        { "src": "img/waffle1.JPG" },
+        { "src": "img/waffle2.JPG" },
+        { "src": "img/waffleconfondo.JPG" },
+        { "src": "img/waffleConFondo2.JPG" },
+        { "src": "img/waffleConPersona.JPG" },
+        { "src": "img/waffleConTe.JPG" }
+      ]
+    }
+  }
