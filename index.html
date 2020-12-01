@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -30,8 +31,9 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#nosotros">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menus y Horarios</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Desarrolladores</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactanos">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#irMapa">Ubicacion</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactanos">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -199,8 +201,17 @@
 
             
         </section>
+        <!-- MAPA-->
+        <section class="page-section bg-our-gray" id="irMapa">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Ubicacion</h2>
+                <div id="mapa" class="mapa"></div></div>   
+                <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger" href="https://goo.gl/maps/SWnSVC3QtyH2FHAV8" id="btnMapa" target="_blank">Abrir en google maps</a>
+        </section>
+
+
         <!-- Team-->
-        <section class="page-section bg-our-gray" id="team">
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Nuestro Increible Equipo</h2>
@@ -218,7 +229,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/angelica.png" alt="" />
                             <h4>Angelica Tejeda</h4>
                             <p class="text-muted">Lider de Diseño</p>
                             <a class="btn btn-dark btn-social mx-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -240,7 +251,7 @@
             </div>
         </section>
         <!-- Contactanos-->
-        <section class="page-section" id="contactanos">
+        <section class="page-section bg-our-gray" id="contactanos">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contactanos</h2>
@@ -564,5 +575,9 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- MAPA LEAFLET-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        
+
     </body>
 </html>

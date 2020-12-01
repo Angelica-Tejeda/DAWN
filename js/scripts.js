@@ -54,3 +54,18 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    if (document.getElementById('mapa')) {
+      var map = L.map('mapa').setView([-2.118449462866232, -79.90047040963124], 17);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      L.marker([-2.118449462866232, -79.90047040963124]).addTo(map)
+        .bindPopup(' Probar')
+        .openPopup();
+    }
+});
