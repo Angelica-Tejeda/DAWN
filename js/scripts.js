@@ -69,3 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
         .openPopup();
     }
 });
+
+var boton = document.querySelector("#boton");
+
+boton.addEventListener("click", function() {
+    var div = document.querySelector("#formulario-steps");
+    div.setAttribute("class", "bajar");
+    boton.style.display = "none";
+});

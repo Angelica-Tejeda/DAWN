@@ -699,7 +699,7 @@ pre code {
 .col-md-9,
 .col-md-8,
 .col-md-7,
-/*.col-md-6,*/
+.col-md-6,
 .col-md-5,
 .col-md-4,
 .col-md-3,
@@ -739,12 +739,42 @@ pre code {
   padding-left: 0.75rem;
 }
 
-.col-md-6 {
+.text-justify .col-md-6 {
   position: relative;
   width: 100%;
   padding-top: 2rem;
   padding-right: 5rem;
   padding-left: 5rem;
+}
+
+#cabecera-contactanos{
+  z-index: 1;
+  background-color: #1F2021;
+  padding: 25px;
+}
+
+@keyframes bajar {
+  0% {
+    transform:translate(0,-195px);
+  }
+  to {
+    z-index: 1;
+    transform:translate(0,0px);
+  }
+}
+
+#formulario-steps.inicial {
+  z-index: -1;
+  position: relative;
+  transform:translate(0,-195px);
+}
+
+#formulario-steps.bajar {
+  animation: bajar 0.6s steps(90) ;
+}
+
+#boton {
+  transform:translate(0,-200px);
 }
 
 .col {
