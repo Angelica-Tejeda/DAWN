@@ -11546,4 +11546,66 @@ section#menu div.text-center .portfolio-link{
    margin-bottom: 0;
  }
 
+ #myInput {
+  background-position: 10px 10px;
+  background-color: #121416;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  
+}
+input, select, textarea{
+  color: white;
+}
+#menub{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 
+
+  
+}
+
+.menud{
+display: flex;
+
+margin: 15px;
+padding: 10px;
+columns: 2;
+
+}
+
+.textodiv{
+width: 80%;
+  
+}
+.textodiv>h3{
+  color: rgb(112, 112, 112);
+  font-size: 17px;
+  font-style:  cursive;
+  width: 50%;
+  text-align: left;
+  
+}
+.textodiv>h2{
+  font-size: 35px;
+  font-family: cursive;
+  text-align: left;
+}
+
+
+
+.imagenesmenu{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+ 
+}
+.imagenesmenu>img{
+
+  width: 100px;
+  height: 100px;
+}
