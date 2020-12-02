@@ -1,0 +1,57 @@
+[
+      {
+        "nombre": "Nutella Waffles",
+        "src": "img/menui2.PNG",
+        "texto": "toppings: frutillas , almendras, miel y nutella"
+      },
+     {
+        "nombre": "Probar Waffles",
+        "src": "img/menui3.PNG",
+        "texto": "Toppings: frutillas , almendras, miel y mantequila de mani"
+      },
+        {
+        "nombre": "Arequipe Waffles",
+        "src": "img/menui4.PNG",
+        "texto": "Toppings: banana, miel y manjar"
+      },
+       {
+        "nombre": "Salsamoras Waffles",
+        "src": "img/menui5.PNG",
+        "texto": "Toppings: frutillas , moras, miel y mermelada"
+      },
+
+         {
+        "nombre": "Milkshakes",
+        "src": "img/menui6.PNG",
+        "texto": "Banana caramelo, rollo de canela, oreo cookies, oreo menta, chocobanana,\n cafe latte, mocha caramelo, cookies & cream, piña colada"
+      },
+        {
+        "nombre": "Mega Tés",
+        "src": "img/menui1.PNG",
+        "texto": "Mega Original o Tropical, Blue Curacao, Sunrise Punch, Peppermint, Lavanda, mojite"
+      },
+             {
+        "nombre": "Volcan de chocolate",
+        "src": "img/menui7.PNG",
+        "texto": "Nuevo"
+      },
+           {
+        "nombre": "Ponche de frutas",
+        "src": "img/menui8.PNG",
+        "texto": "Nuevo"
+      },
+            {
+        "nombre": "Mega Café",
+        "src": "img/menui9.PNG",
+        "texto": "Nuevo"
+      },
+             {
+        "nombre": "Botella Detox",
+        "src": "img/menui10.PNG",
+        "texto": "Nuevo"
+      }
+      
+
+      
+    ]
+  

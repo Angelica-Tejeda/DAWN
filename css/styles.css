@@ -11440,4 +11440,52 @@ section#menu div.text-center .portfolio-link{
    margin-bottom: 0;
  }
 
+ #myInput {
+  background-position: 10px 10px;
+  background-color: #121416;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
+
+.menud{
+display: flex;
+flex:50%;
+  
+
+}
+
+.textodiv{
+  
+}
+.textodiv>h3{
+  color: rgb(112, 112, 112);
+  font-size: 20px;
+  font-style:  cursive;
+  width: 50%;
+  text-align: left;
+  
+}
+.textodiv>h2{
+  font-size: 50px;
+  font-family: cursive;
+  text-align: left;
+}
+
+
+
+.imagenesmenu{
+  width: 100px;
+  height: 100px;
+  float: right;
+ 
+}
+.imagenesmenu>img{
+
+  width: 100px;
+  height: 100px;
+}
