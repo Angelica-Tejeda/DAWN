@@ -8,6 +8,10 @@ buscador.addEventListener('input',function(event){
         let texto = item.getElementsByTagName("h3")[0].textContent.toUpperCase()
         if(autor.includes(frase.toUpperCase()) || texto.includes(frase.toUpperCase()) ){
             item.style.display = "flex"
+            item.style.flex = "nowrap"
+            item.style.columns = "1"
+           
+   
         }
         else{
             item.style.display = "none"
