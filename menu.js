@@ -1,12 +1,13 @@
 const buscador = document.getElementById("myInput");
 buscador.addEventListener('input',function(event){
   let frase = event.target.value.toUpperCase()
-  let burbujas = document.getElementsByClassName("burbuja")
+  let burbujas = document.getElementsByClassName("menud")
   if(frase != ""){
     for(let item of burbujas){
         let autor = item.getElementsByTagName("h2")[0].textContent.toUpperCase()
-        if(autor.includes(frase.toUpperCase())){
-            item.style.display = "grid"
+        let texto = item.getElementsByTagName("h3")[0].textContent.toUpperCase()
+        if(autor.includes(frase.toUpperCase()) || texto.includes(frase.toUpperCase()) ){
+            item.style.display = "flex"
         }
         else{
             item.style.display = "none"
@@ -17,7 +18,7 @@ buscador.addEventListener('input',function(event){
     let contador = 0
     for(let item of burbujas){
       if(contador < 10){
-        item.style.display = "grid"
+        item.style.display = "flex"
       }
       else{
         item.style.display = "none"
