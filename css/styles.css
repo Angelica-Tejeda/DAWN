@@ -747,42 +747,148 @@ pre code {
   padding-left: 5rem;
 }
 
-#contactanos {
-  height: 750px;
+/*----------Inicio Metodo Stepper----------*/
+/*#contactanos {
+  height: 800px;
 }
 
 #cabecera-contactanos{
   z-index: 1;
-  height: 25%;
+  height: 15%;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #1F2021;
-  padding: 25px 150px 25px 25px;
+  padding: 10px 150px 10px 25px;
+}*/
+
+#bloque-1.inicial,
+#bloque-2.inicial,
+#bloque-3.inicial,
+#bloque-4.inicial,
+#bloque-5.inicial,
+#bloque-6.inicial {
+  z-index: -1;
+  position: relative;
+  transform:translate(0,0px);
 }
 
-@keyframes bajar {
-  from { 
-    transform:translate(0,10px);
-  }
-  to {
-    transform:translate(0,190px);
-  }
-}
-
-#formulario-steps.inicial {
+#bloque-1.final,
+#bloque-2.final,
+#bloque-3.final,
+#bloque-4.final,
+#bloque-5.final,
+#bloque-6.final {
   z-index: 0;
   position: relative;
-  transform:translate(0,10px);
+  animation: bajar-bloque 0.6s steps(90) both;
 }
 
-#formulario-steps.bajar {
-  animation: bajar 1s steps(90) both;
+
+@keyframes bajar-bloque {
+  from { transform:translate(0, 0px);}
+  to { transform:translate(0, 5px);}
+}
+
+#boton.inicial {
+  transform:translate(0, -500px);
+}
+
+@keyframes bajar-boton-1 {
+  from { transform:translate(0, -500px);}
+  to { transform:translate(0, -350px);}
+}
+
+@keyframes bajar-boton-2 {
+  from { transform:translate(0, -350px);}
+  to { transform:translate(0, -200px);}
+}
+
+
+#boton.primero {
+  animation: bajar-boton-1 0.6s steps(90) both;
+}
+
+#boton.segundo {
+  animation: bajar-boton-2 0.6s steps(90) both;
+}
+
+#submit.inicial{
+  z-index: -1;
+  position: relative;
+  transform:translate(0, -130px);
+}
+
+@keyframes bajar-boton-enviar {
+  from { transform:translate(0, -130px);}
+  to { transform:translate(0, 0px);}
+}
+
+#submit.final {
+  z-index: 0;
+  position: relative;
+  animation: bajar-boton-enviar 0.6s steps(90) both;
+}
+
+/*@keyframes bajar-bloque-1 {
+  from { transform:translate(0,15px);}
+  to { transform:translate(0,130px);}
+}
+
+@keyframes bajar-bloque-2 {
+  from { transform:translate(0,120px);}
+  to { transform:translate(0,130px);}
+}
+
+@keyframes bajar-bloque-3 {
+  from { transform:translate(0,100px);}
+  to { transform:translate(0,120px);}
+}
+
+@keyframes bajar-bloque-4 {
+  from { transform:translate(0,100px);}
+  to { transform:translate(0,125px);}
+}
+
+@keyframes bajar-bloque-5 {
+  from { transform:translate(0,100px);}
+  to { transform:translate(0,130px);}
+}
+
+@keyframes bajar-bloque-6 {
+  from { transform:translate(0,100px);}
+  to { transform:translate(0,135px);}
+}
+
+#bloque-1.final {
+  animation: bajar-bloque-1 0.8s steps(90) both;
+}
+
+#bloque-2.final {
+  animation: bajar-bloque-2 0.8s steps(90) both;
+}
+
+#bloque-3.final {
+  animation: bajar-bloque-3 0.8s steps(90) both;
+}
+
+#bloque-4.final {
+  animation: bajar-bloque-4 0.8s steps(90) both;
+}
+
+#bloque-5.final {
+  animation: bajar-bloque-5 0.8s steps(90) both;
+}
+
+#bloque-6.final {
+  animation: bajar-bloque-6 0.8s steps(90) both;
 }
 
 #boton {
   padding-bottom: 25px  ;
-  transform:translate(0,-70px);
-}
+  transform:translate(0, -500px);
+}*/
+
+/*---------- Fin Metodo Stepper----------*/
 
 .col {
   flex-basis: 0;

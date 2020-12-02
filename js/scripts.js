@@ -73,7 +73,38 @@ document.addEventListener('DOMContentLoaded', function () {
 var boton = document.querySelector("#boton");
 
 boton.addEventListener("click", function() {
-    var div = document.querySelector("#formulario-steps");
-    div.setAttribute("class", "bajar");
-    boton.style.display = "none";
+    let clase = "row align-items-stretch mb-4 final";
+
+    if(boton.textContent == "Escribir"){
+        boton.value = "bloque-2";
+        boton.textContent = "Siguiente";
+        var bloque1 = document.querySelector("#bloque-1");
+        bloque1.className = clase;
+        boton.className = "btn btn-primary btn-xl text-uppercase primero";
+    } else {
+        if (boton.value == "bloque-2") {
+            boton.value = "bloque-3";
+            var bloque2 = document.querySelector("#bloque-2");
+            bloque2.className = clase;
+        } else if (boton.value == "bloque-3") {
+            boton.value = "bloque-4";
+            var bloque2 = document.querySelector("#bloque-3");
+            bloque2.className = clase;
+        } else if (boton.value == "bloque-4") {
+            boton.value = "bloque-5";
+            var bloque2 = document.querySelector("#bloque-4");
+            bloque2.className = clase;
+            boton.className = "btn btn-primary btn-xl text-uppercase segundo";
+        } else if (boton.value == "bloque-5") {
+            boton.value = "bloque-6";
+            var bloque2 = document.querySelector("#bloque-5");
+            bloque2.className = clase;
+        } else if (boton.value == "bloque-6") {
+            var enviar = document.querySelector("#submit");
+            enviar.className = "btn btn-primary btn-xl text-uppercase final";
+            boton.style.display = "none";
+            var bloque2 = document.querySelector("#bloque-6");
+            bloque2.className = clase;
+        }
+    }
 });
