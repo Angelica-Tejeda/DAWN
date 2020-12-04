@@ -11435,21 +11435,16 @@ input, select, textarea{
 }
 
 #menub{
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
-<<<<<<< HEAD
 
-  
-=======
-  flex-flow: column wrap;
   padding-right: 25px;
   padding-bottom: 40px;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;;
 }
 
 p.text-muted{
   font-size: 20px;
->>>>>>> 60252afc49d6c1b6e2a889f7c7360332a59d01df
 }
 
 @media (max-width: 800px) {
@@ -11465,17 +11460,6 @@ p.text-muted{
   div.container.bottom{
     display: none;
   }
-<<<<<<< HEAD
-
-}
-
-img#imagenSobreNosotros{
-  height: 75%;
-  width: 75%;
-  text-align: center;
-  margin:auto;
-=======
->>>>>>> 60252afc49d6c1b6e2a889f7c7360332a59d01df
   
   p.text-muted{
     font-size: 16px;
@@ -11485,10 +11469,12 @@ img#imagenSobreNosotros{
 .menud{
   display: flex;
   width: 100%;
-  margin: 8px;
+  
   padding: 10px;
   columns: 2;
- 
+  border: solid 1px;
+  border-color: rgb(216, 224, 139);
+  border-radius: 25px;
 }
 
 .textodiv{

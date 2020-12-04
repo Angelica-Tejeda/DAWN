@@ -11,15 +11,15 @@ buscador.addEventListener('input',function(event){
 
       if(autor.includes(frase.toUpperCase()) || texto.includes(frase.toUpperCase()) ){
         fondo.style.display = ""
-        item.style.display = "flex"
-        item.style.flex = "nowrap"
+        item.style.display = ""
+        item.style.flex = ""
        
       //  fondo.style.display = "block"
        // fondo.style.columnCount = "2"
         //item.style.flex = "nowrap"
         cont++;
         if(cont%2!=0 ){
-          fondo.style.display = "inline"
+          fondo.style.display = ""
         }
       }
       else{
