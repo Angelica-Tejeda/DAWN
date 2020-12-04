@@ -11483,28 +11483,46 @@ section#menu div.text-center .portfolio-link{
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
-  
+  margin-bottom: 12px; 
 }
+
+#buscador {
+  padding-bottom: 40px;
+}
+
 input, select, textarea{
   color: white;
 }
+
 #menub{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
+}
 
+@media (max-width: 800px) {
+  #myInput {
+    width: 85%;
+  }
 
-  
+  #menub{
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+
+  #promociones,
+  #horarios {
+    font-size: 2rem;
+  }
 }
 
 .menud{
-display: flex;
-
-margin: 15px;
-padding: 10px;
-columns: 2;
-
+  display: flex;
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  columns: 2;
 }
 
 .textodiv{
