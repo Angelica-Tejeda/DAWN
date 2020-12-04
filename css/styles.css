@@ -11443,11 +11443,21 @@ input, select, textarea{
 }
 
 .menud{
+<<<<<<< HEAD
+
+
+margin: 5px;
+padding: 10px;
+
+
+
+=======
   display: flex;
   width: 100%;
   margin: 15px;
   padding: 10px;
   columns: 2;
+>>>>>>> 184c75c45d516608f6f8315c1615353dea9a7179
 }
 
 .textodiv{
