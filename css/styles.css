@@ -11523,3 +11523,7 @@ width: 80%;
   height: 0;
   width: 0;
 }
+
+.introjs-tooltiptext{
+  color: black;
+}
