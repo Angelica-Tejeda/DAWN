@@ -11457,6 +11457,20 @@ p.text-muted{
     font-size: 2rem;
   }
   
+  #menub{
+
+    padding-right: 25px;
+    padding-bottom: 40px;
+    display:inline;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+  }
+
+  .menud{
+  margin-top:  10px;
+  
+  }
+  
   div.container.bottom{
     display: none;
   }
