@@ -11570,11 +11570,12 @@ input, select, textarea{
 }
 
 .menud{
-display: flex;
 
-margin: 15px;
+
+margin: 5px;
 padding: 10px;
-columns: 2;
+
+
 
 }
 
