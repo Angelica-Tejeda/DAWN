@@ -11562,6 +11562,9 @@ width: 80%;
 .mySlides {
   display: none;
 }
+.mySlides img {
+  width: 100%;
+}
 
 /* Next & previous buttons */
 .prev, .next {
