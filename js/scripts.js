@@ -3,6 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
+   var slideIndex = 1;
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -79,10 +80,85 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function cargarGaleria () {
-    let indicators= document.getElementsByClassName('carousel-indicators');
+    let galeria= document.getElementsByClassName('slideshow-container')[0];
+    let puntos=document.getElementById('puntos');
+
+    fetch('json/imagenes.json')
+        .then((resultado) => {
+            return resultado.text();
+        })
+        .then((str) => {
+            let json = JSON.parse(str)
+            let pos=1;
+            for (let dato of json) {
+                let divImagen=document.createElement('div');
+                divImagen.setAttribute('class','mySlides fade');
+                let imagen=document.createElement('img');
+                imagen.src=dato.land;
+                let caption=document.createElement('div');
+                caption.setAttribute('class','text');
+                caption.textContent=dato.text;
+
+                divImagen.appendChild(imagen);
+                divImagen.appendChild(caption);
+                galeria.appendChild(divImagen);
+
+                let span=document.createElement('span');
+                span.setAttribute('class','dot');
+                span.addEventListener('click',()=>{
+                    currentSlide(pos++);
+                });
+                puntos.appendChild(span);
+            }
+            let btnPrev= document.createElement('a');
+            btnPrev.setAttribute('class','prev');
+            btnPrev.addEventListener('click',()=>{
+                plusSlides(-1);
+            });
+            btnPrev.innerHTML='&#10094;';
+            let btnNext=document.createElement('a');
+            btnNext.setAttribute('class','next');
+            btnNext.addEventListener('click',()=>{
+                plusSlides(1);
+            });
+            btnNext.innerHTML='&#10095;';
+
+            galeria.appendChild(btnPrev);
+            galeria.appendChild(btnNext);
+        })
+        .then(()=>{
+            showSlides(slideIndex);
+        })
+
+
     
 }
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeDot", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " activeDot";
+}
 
 
 
