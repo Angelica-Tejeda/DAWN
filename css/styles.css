@@ -11499,15 +11499,15 @@ width: 80%;
   color: rgb(112, 112, 112);
   font-size: 16px;
   font-style:  cursive;
-  width: 50%;
-  text-align: left;
+  
+  text-align: center;
  
 }
 
 .textodiv>h2{
   font-size: 35px;
   font-family: cursive;
-  text-align: left;
+  text-align: center;
 }
 
 .imagenesmenu{
