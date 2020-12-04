@@ -1,25 +1,25 @@
 /*!
-    * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-    */
-    (function ($) {
+ * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+ */
+var slideIndex = 1;
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
+            target = target.length ?
+                target :
+                $("[name=" + this.hash.slice(1) + "]");
             if (target.length) {
-                $("html, body").animate(
-                    {
+                $("html, body").animate({
                         scrollTop: target.offset().top - 72,
                     },
                     1000,
@@ -58,41 +58,120 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     if (document.getElementById('mapa')) {
-      var map = L.map('mapa').setView([-2.118449462866232, -79.90047040963124], 17);
+        var map = L.map('mapa').setView([-2.118449462866232, -79.90047040963124], 17);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-      L.marker([-2.118449462866232, -79.90047040963124]).addTo(map)
-        .bindPopup(' Probar')
-        .openPopup();
+        L.marker([-2.118449462866232, -79.90047040963124]).addTo(map)
+            .bindPopup(' Probar')
+            .openPopup();
     }
 
     let info = document.querySelector('#info');
-    info.addEventListener('click',()=>{
+    info.addEventListener('click', () => {
         introJs().start();
     })
 
     cargarGaleria();
-    
+
 });
 
-function cargarGaleria () {
-    let indicators= document.getElementsByClassName('carousel-indicators');
-    
+function cargarGaleria() {
+    let galeria = document.getElementsByClassName('slideshow-container')[0];
+    let puntos = document.getElementById('puntos');
+
+    fetch('json/imagenes.json')
+        .then((resultado) => {
+            return resultado.text();
+        })
+        .then((str) => {
+            let json = JSON.parse(str)
+            let pos = 1;
+            for (let dato of json) {
+                let divImagen = document.createElement('div');
+                divImagen.setAttribute('class', 'mySlides fadeImagen');
+                let imagen = document.createElement('img');
+                imagen.src = dato.land;
+                let caption = document.createElement('div');
+                caption.setAttribute('class', 'text');
+                caption.textContent = dato.texto;
+
+                divImagen.appendChild(imagen);
+                divImagen.appendChild(caption);
+                galeria.appendChild(divImagen);
+
+                let span = document.createElement('span');
+                span.setAttribute('class', 'dot');
+                span.addEventListener('click', () => {
+                    currentSlide(pos);
+                });
+                puntos.appendChild(span);
+                pos++;
+            }
+
+            let btnPrev = document.createElement('a');
+            btnPrev.setAttribute('class', 'prev');
+            btnPrev.addEventListener('click', () => {
+                plusSlides(-1);
+            });
+            btnPrev.innerHTML = '&#10094;';
+            let btnNext = document.createElement('a');
+            btnNext.setAttribute('class', 'next');
+            btnNext.addEventListener('click', () => {
+                plusSlides(1);
+            });
+            btnNext.innerHTML = '&#10095;';
+
+            galeria.appendChild(btnPrev);
+            galeria.appendChild(btnNext);
+        })
+        .then(() => {
+            showSlides(slideIndex);
+        })
+
+
+
 }
 
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activeDot", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " activeDot";
+}
 
 
 var boton = document.querySelector("#boton");
 
-boton.addEventListener("click", function() {
+boton.addEventListener("click", function () {
     let clase = "row align-items-stretch mb-4 final";
 
-    if(boton.textContent == "Escribir"){
+    if (boton.textContent == "Escribir") {
         boton.value = "bloque-2";
         boton.textContent = "Siguiente";
         var bloque1 = document.querySelector("#bloque-1");
