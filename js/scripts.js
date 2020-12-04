@@ -73,8 +73,19 @@ document.addEventListener('DOMContentLoaded', function () {
     info.addEventListener('click',()=>{
         introJs().start();
     })
+
+    cargarGaleria();
     
 });
+
+function cargarGaleria () {
+    let indicators= document.getElementsByClassName('carousel-indicators');
+    
+}
+
+
+
+
 
 var boton = document.querySelector("#boton");
 
