@@ -11447,6 +11447,11 @@ p.text-muted{
   font-size: 20px;
 }
 
+#infonosotros {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
   #myInput {
     width: 85%;
@@ -11523,7 +11528,7 @@ width: 80%;
 
 .text-justify .col-md-6 img{
   position: relative;
-  width: 100%;
+  width: 95%;
 }
 
 /*----------Inicio Metodo Stepper----------*/
