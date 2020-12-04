@@ -11411,6 +11411,14 @@ section#menu{
   margin-bottom: 0;
 }
 
+@media (max-width: 800px) {
+  #btnMapa{
+    padding: 18px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
 #myInput {
   background-position: 10px 10px;
   background-color: #121416;
@@ -11422,10 +11430,6 @@ section#menu{
   margin-bottom: 12px; 
 }
 
-#buscador {
-  padding-bottom: 40px;
-}
-
 input, select, textarea{
   color: white;
 }
@@ -11435,39 +11439,37 @@ input, select, textarea{
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
   flex-flow: column wrap;
-  
+  padding-right: 25px;
+  padding-bottom: 40px;
+}
+
+p.text-muted{
+  font-size: 20px;
 }
 
 @media (max-width: 800px) {
   #myInput {
     width: 85%;
   }
-
   
   #promociones,
   #horarios {
     font-size: 2rem;
   }
-
+  
   div.container.bottom{
     display: none;
   }
-
-}
-
-img#imagenSobreNosotros{
-  height: 75%;
-  width: 75%;
   
-}
-p.text-muted{
-  font-size: 25px;
+  p.text-muted{
+    font-size: 16px;
+  }
 }
  
 .menud{
   display: flex;
   width: 100%;
-  margin: 15px;
+  margin: 8px;
   padding: 10px;
   columns: 2;
   border: solid 1px;
