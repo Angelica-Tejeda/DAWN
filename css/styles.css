@@ -11434,7 +11434,7 @@ input, select, textarea{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
-  flex-flow: column wrap;
+
   
 }
 
@@ -11458,6 +11458,8 @@ input, select, textarea{
 img#imagenSobreNosotros{
   height: 75%;
   width: 75%;
+  text-align: center;
+  margin:auto;
   
 }
 p.text-muted{
@@ -11470,8 +11472,7 @@ p.text-muted{
   margin: 15px;
   padding: 10px;
   columns: 2;
-  border: solid 1px;
-  border-color: yellow;
+ 
 }
 
 .textodiv{

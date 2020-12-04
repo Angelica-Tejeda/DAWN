@@ -7,9 +7,9 @@ buscador.addEventListener('input',function(event){
     var cont = 0;
     for(let item of burbujas){
       let autor = item.getElementsByTagName("h2")[0].textContent.toUpperCase()
-      /*let texto = item.getElementsByTagName("h3")[0].textContent.toUpperCase()*/
+      let texto = item.getElementsByTagName("h3")[0].textContent.toUpperCase()
 
-      if(autor.includes(frase.toUpperCase()) /*|| texto.includes(frase.toUpperCase()) */){
+      if(autor.includes(frase.toUpperCase()) || texto.includes(frase.toUpperCase()) ){
         fondo.style.display = ""
         item.style.display = "flex"
         item.style.flex = "nowrap"
@@ -19,7 +19,7 @@ buscador.addEventListener('input',function(event){
         //item.style.flex = "nowrap"
         cont++;
         if(cont%2!=0 ){
-          fondo.style.display = ""
+          fondo.style.display = "inline"
         }
       }
       else{
