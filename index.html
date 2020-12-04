@@ -1,634 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-        <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <div data-step="10" data-intro="¡Eso es todo, estás listo para empezar a navegar!" id="final"></div>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo_1.png" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ml-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto font-weight-bold ">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#nosotros">Sobre Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menus y Horarios</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#irMapa">Ubicacion</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactanos">Contacto</a></li>
-                        <li class="nav-item"><a data-step="1" data-intro="¡Bienvenido a la visita guiada! Te mostraremos las secciones de nuestra página." id="info" class="nav-link js-scroll-trigger" href="#"><i class="fas fa-info-circle"></i></a></li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <div data-step="10" data-intro="¡Eso es todo, estás listo para empezar a navegar!" id="final"></div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo_1.png" alt="" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto font-weight-bold ">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#nosotros">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menus y Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#irMapa">Ubicacion</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactanos">Contacto</a></li>
+                    <li class="nav-item"><a data-step="1"
+                            data-intro="¡Bienvenido a la visita guiada! Te mostraremos las secciones de nuestra página."
+                            id="info" class="nav-link js-scroll-trigger" href="#"><i class="fas fa-info-circle"></i></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container bottom">
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container bottom">
             <!--<div class="masthead-subheading">Welcome To Our Studio!</div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> -->
-                <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger" href="#nosotros">Sobre Nosotros</a>
-            </div>
-        </header>
-        <!-- Sobre Nosotros-->
-        <section class="page-section" id="nosotros">
-            <div  class="container">
-                <div class="text-center">
-                    <h2 data-step="2" data-intro="Aquí encontrarás información sobre nuestro local" class="section-heading text-uppercase">Sobre Nosotros</h2>
-                </div>
-                <div class="row text-justify">
-                    <div class="col-md-6">
-                        <img src="img/waffleconfondo.JPG" alt="sobre nosotros">
-                    </div>
-                    <div class="col-md-6">
-                        <p class="text-muted">
-                            ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable, tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran volver.<br>
-                            <b>Repitiendo texto!!!</b> <br>
-                            ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable, tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran volver.<br>
-                            <b>Repitiendo texto, otra vez!!!</b> <br>
-                            ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable, tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran volver.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Galeria-->
-        <section class="page-section bg-our-gray" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 data-step="3" data-intro="Aquí podrás enterarte de nuestras últimas noticias" class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Menu y Promociones-->
-        <section class="page-section" id="menu">
-            <div id="buscador">
-                <h1 data-step="4" data-intro="Aquí encontrarás nuestro delicioso menú" >Menu</h1>
-                <div class="col-12 mt-2">
-                    <input type="text" id="myInput" placeholder="Buscar por comida" title="ingresar texto">
-                </div>    
-                <div id="menub" class="container-fluid m-0" >
-                    <!--Aqui se agregan los div de los platillos-->
-                </div>
-            </div>                        
-            <div class="container">
-                <div class="text-center">
-                    <h2 data-step="5" data-intro="Aquí encontrarás información sobre nuestras últimas promociones" id="promociones" class="section-heading text-uppercase">promociones</h2>
-                    <h3 class="section-subheading text-muted">disfruta nuestras fantasticas promociones!!</h3>
-                   
-                    <a class="portfolio-link" data-toggle="modal" href="#promocionesimg">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-tags-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M3 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 7.586 1H3zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                    <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
-                                </svg>
-                            </div>
-                        </div>
-                      promociones
-                    </a>
-                </div>
-                <div class="text-center">
-                    <h2 data-step="6" data-intro="Aquí podrás ver nuestros horarios de atención" id="horarios" class="section-heading text-uppercase">HORARIOS</h2>
-                    <h3 class="section-subheading text-muted">Nuestros horarios para tu atencion!</h3>
-                    <a class="portfolio-link" data-toggle="modal" href="#horariosimg">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-alarm-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
-                                </svg>
-                            </div>
-                        </div>
-                       horarios
-                    </a>
-                </div>     
-            </div>
-        </section>
-        <!--MAPA-->
-        <section class="page-section bg-our-gray" id="irMapa">
+            <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger" href="#nosotros">Sobre
+                Nosotros</a>
+        </div>
+    </header>
+    <!-- Sobre Nosotros-->
+    <section class="page-section" id="nosotros">
+        <div class="container">
             <div class="text-center">
-                <h2  data-step="7" data-intro="¿Deseas saber dónde nos encontramos?" class="section-heading text-uppercase">Ubicacion</h2>
-                <div id="mapa" class="mapa"></div></div>   
-                <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger" href="https://goo.gl/maps/SWnSVC3QtyH2FHAV8" id="btnMapa" target="_blank">Abrir en google maps</a>
-        </section>
+                <h2 data-step="2" data-intro="Aquí encontrarás información sobre nuestro local"
+                    class="section-heading text-uppercase">Sobre Nosotros</h2>
+            </div>
+            <div class="row text-justify">
+                <div class="col-md-6">
+                    <img src="img/waffleconfondo.JPG" alt="sobre nosotros">
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">
+                        ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a
+                        todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable,
+                        tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que
+                        nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran
+                        volver.<br>
+                        <b>Repitiendo texto!!!</b> <br>
+                        ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a
+                        todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable,
+                        tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que
+                        nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran
+                        volver.<br>
+                        <b>Repitiendo texto, otra vez!!!</b> <br>
+                        ProBar es un bar café que cuenta con temática "healthy", nuestra finalidad es la de brindar a
+                        todos nuestros clientes la opción de degustar platos deliciosos de una manera saludable,
+                        tenemos estándares de calidad en la preparación de nuestros platillos y siempre buscamos que
+                        nuestros clientes disfruten de una experiencia agradable, de tal manera que siempre quieran
+                        volver.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Galeria-->
+    <section class="page-section bg-our-gray" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 data-step="3" data-intro="Aquí podrás enterarte de nuestras últimas noticias"
+                    class="section-heading text-uppercase">Portfolio</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+    </section>
+    <!--Menu y Promociones-->
+    <section class="page-section" id="menu">
+        <div id="buscador">
+            <h1 data-step="4" data-intro="Aquí encontrarás nuestro delicioso menú">Menu</h1>
+            <div class="col-12 mt-2">
+                <input type="text" id="myInput" placeholder="Buscar por comida" title="ingresar texto">
+            </div>
+            <div id="menub" class="container-fluid m-0">
+                <!--Aqui se agregan los div de los platillos-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <h2 data-step="5" data-intro="Aquí encontrarás información sobre nuestras últimas promociones"
+                    id="promociones" class="section-heading text-uppercase">promociones</h2>
+                <h3 class="section-subheading text-muted">disfruta nuestras fantasticas promociones!!</h3>
+
+                <a class="portfolio-link" data-toggle="modal" href="#promocionesimg">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-tags-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 7.586 1H3zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                <path
+                                    d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z" />
+                            </svg>
+                        </div>
+                    </div>
+                    promociones
+                </a>
+            </div>
+            <div class="text-center">
+                <h2 data-step="6" data-intro="Aquí podrás ver nuestros horarios de atención" id="horarios"
+                    class="section-heading text-uppercase">HORARIOS</h2>
+                <h3 class="section-subheading text-muted">Nuestros horarios para tu atencion!</h3>
+                <a class="portfolio-link" data-toggle="modal" href="#horariosimg">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-alarm-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                    horarios
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--MAPA-->
+    <section class="page-section bg-our-gray" id="irMapa">
+        <div class="text-center">
+            <h2 data-step="7" data-intro="¿Deseas saber dónde nos encontramos?" class="section-heading text-uppercase">
+                Ubicacion</h2>
+            <div id="mapa" class="mapa"></div>
+        </div>
+        <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger"
+            href="https://goo.gl/maps/SWnSVC3QtyH2FHAV8" id="btnMapa" target="_blank">Abrir en google maps</a>
+    </section>
 
 
-        <!--Equipo-->
-        <section class="page-section" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2  data-step="8" data-intro="¿Quieres conocer a nuestros desarrolladores?" class="section-heading text-uppercase">Nuestro Increible Equipo</h2>
-                    <h3 class="section-subheading text-muted">Creando los mejores diseños interactivos.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/Daniel.png" alt="" />
-                            <h4>Daniel Sánchez</h4>
-                            <p class="text-muted">Lider de Marketing</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/dsjsanchez"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dsjsanchez/"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/angelica.png" alt="" />
-                            <h4>Angélica Tejeda</h4>
-                            <p class="text-muted">Lider de Diseño</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/o0Sharlotte.Black0o/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/atejeda16/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
-                            <h4>Luis Sánchez</h4>
-                            <p class="text-muted">Lider Desarrollador</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/luiscarlos.sanchezplaza/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lcsanche/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!--Equipo-->
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 data-step="8" data-intro="¿Quieres conocer a nuestros desarrolladores?"
+                    class="section-heading text-uppercase">Nuestro Increible Equipo</h2>
+                <h3 class="section-subheading text-muted">Creando los mejores diseños interactivos.</h3>
             </div>
-        </section>
-        <!-- Contactanos-->
-        <section class="page-section bg-our-gray" id="contacto">
-            <div class="container">
-                <div id="cabecera-contactanos" class="text-center">
-                    <h2  data-step="9" data-intro="¿Tienes alguna duda, consulta o requerimiento? ¡Escríbenos, estaremos encantados de atenderte!" class="section-heading text-uppercase">Contacto</h2>
-                    <h3 class="section-subheading text-muted">Escribenos un mensaje y nosotros resolveremos tu inquietudes.</h3>
-                </div>
-                <div id="formulario-steps" class="inicial">
-                    <form id="contactForm" name="sentMessage" action= "enviar.php" method="POST">
-                        <div id="bloque-1" class="row align-items-stretch mb-4 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Nombre:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre y Apellido" required="required" data-validation-required-message="Ingrese su nombre." />
-                            </div>
-                        </div>
-                        <div id="bloque-2" class="row align-items-stretch mb-2 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Fecha de Nacimiento:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <input class="form-control" id="fecha" name="fecha" type="date" min="1990-01-01" max="2021-12-31" required="required" data-validation-required-message="Ingrese su fecha de nacimiento." />
-                            </div>
-                        </div>
-                        <div id="bloque-3" class="row align-items-stretch mb-4 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Ciudad:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <select class="form-control" name="ciudad" required="required" data-validation-required-message="Ingrese su ciudad de origen." >
-                                    <option>Guayaquil</option>                             
-                                    <option>Quito</option>
-                                    <option>Cuenca</option>
-                                    <option>Salinas</option>
-                                    <option>Machala</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div id="bloque-4" class="row align-items-stretch mb-4 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Telefono:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <input class="form-control" id="telefono" name="telefono" type="tel" placeholder="Ingrese su numero de telefono" required="required" data-validation-required-message="Ingrese su numero de telefono." />
-                            </div>
-                        </div>
-                        <div id="bloque-5" class="row align-items-stretch mb-4 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Correo:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required="required" data-validation-required-message="Ingrese su email." />
-                            </div>
-                        </div>
-                        <div id="bloque-6" class="row align-items-stretch mb-4 inicial">
-                            <div class="col-md-1">
-                                <label for="nombre">Mensaje:</label>
-                            </div>
-                            <div class="col-md-11">
-                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Ingrese el mensaje/comentario que desea enviar" rows="4"required="required" data-validation-required-message="Ingrese un mensaje."></textarea>
-                                <br>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary btn-xl text-uppercase inicial" id="submit" type="submit" >Enviar</button>
-                        </div>
-                    </form>
-                    <button class="btn btn-primary btn-xl text-uppercase inicial" id="boton" value="bloque-1" type="reset" >Escribir</button>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">in Protein we Trust © ProBar Website 2020</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lcsanche/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Politicas de Privacidad</a>
-                        <a href="adminLTE/View/login.html" target="_blank">Iniciar Sesión</a>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/Daniel.png" alt="" />
+                        <h4>Daniel Sánchez</h4>
+                        <p class="text-muted">Lider de Marketing</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/dsjsanchez"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dsjsanchez/"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">ProBar</h2>
-                                    <p class="item-intro text-muted">Proyecto de Desarrollo de Aplicaciones Web.</p>
-                                    <img class="img-fluid d-block mx-auto" src="img/menu.JPG" alt="" />
-                                    <p>El proyecto consiste en desarrollar un pagina web para un cliente en particular, con el objetivo de desarrollar nuestras habilidades con el fin de dominarlas</p>
-                                    <ul class="list-inline">
-                                        <li>Date: Noviembre 2020</li>
-                                        <li>Client: ProBar</li>
-                                        <li>Category: Restaurante</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-           <!-- menu-->
-        <div class="portfolio-modal modal fade" id="menuimg" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    
-                                   
-                                    <img class="img-fluid d-block mx-auto" src="img/menu.JPG" alt="" />
-                                    
-                                    <ul class="list-inline">
-                                      
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        cerrar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/angelica.png" alt="" />
+                        <h4>Angélica Tejeda</h4>
+                        <p class="text-muted">Lider de Diseño</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/o0Sharlotte.Black0o/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/atejeda16/?hl=es-la"><i
+                                class="fab fa-instagram"></i></a>
 
-<!--promociones -->>
-        <div class="portfolio-modal modal fade" id="promocionesimg" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    
-                                   
-                                    <img class="img-fluid d-block mx-auto" src="img/promociones.JPG" alt="" />
-                                    
-                                    <ul class="list-inline">
-                                      
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        cerrar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                        <h4>Luis Sánchez</h4>
+                        <p class="text-muted">Lider Desarrollador</p>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.facebook.com/luiscarlos.sanchezplaza/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lcsanche/?hl=es-la"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--horarios-->
-        <div class="portfolio-modal modal fade" id="horariosimg" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    
-                                   
-                                    <img class="img-fluid d-block mx-auto" src="img/horarios.JPG" alt="" />
-                                    
-                                    <ul class="list-inline">
-                                      
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        cerrar
-                                    </button>
-                                </div>
-                            </div>
+    </section>
+    <!-- Contactanos-->
+    <section class="page-section bg-our-gray" id="contacto">
+        <div class="container">
+            <div id="cabecera-contactanos" class="text-center">
+                <h2 data-step="9"
+                    data-intro="¿Tienes alguna duda, consulta o requerimiento? ¡Escríbenos, estaremos encantados de atenderte!"
+                    class="section-heading text-uppercase">Contacto</h2>
+                <h3 class="section-subheading text-muted">Escribenos un mensaje y nosotros resolveremos tu inquietudes.
+                </h3>
+            </div>
+            <div id="formulario-steps" class="inicial">
+                <form id="contactForm" name="sentMessage" action="enviar.php" method="POST">
+                    <div id="bloque-1" class="row align-items-stretch mb-4 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Nombre:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <input class="form-control" id="nombre" name="nombre" type="text"
+                                placeholder="Ingrese su nombre y Apellido" required="required"
+                                data-validation-required-message="Ingrese su nombre." />
                         </div>
                     </div>
+                    <div id="bloque-2" class="row align-items-stretch mb-2 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Fecha de Nacimiento:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <input class="form-control" id="fecha" name="fecha" type="date" min="1990-01-01"
+                                max="2021-12-31" required="required"
+                                data-validation-required-message="Ingrese su fecha de nacimiento." />
+                        </div>
+                    </div>
+                    <div id="bloque-3" class="row align-items-stretch mb-4 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Ciudad:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <select class="form-control" name="ciudad" required="required"
+                                data-validation-required-message="Ingrese su ciudad de origen.">
+                                <option>Guayaquil</option>
+                                <option>Quito</option>
+                                <option>Cuenca</option>
+                                <option>Salinas</option>
+                                <option>Machala</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="bloque-4" class="row align-items-stretch mb-4 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Telefono:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <input class="form-control" id="telefono" name="telefono" type="tel"
+                                placeholder="Ingrese su numero de telefono" required="required"
+                                data-validation-required-message="Ingrese su numero de telefono." />
+                        </div>
+                    </div>
+                    <div id="bloque-5" class="row align-items-stretch mb-4 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Correo:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <input class="form-control" id="email" name="email" type="email"
+                                placeholder="Ingrese su correo electronico" required="required"
+                                data-validation-required-message="Ingrese su email." />
+                        </div>
+                    </div>
+                    <div id="bloque-6" class="row align-items-stretch mb-4 inicial">
+                        <div class="col-md-1">
+                            <label for="nombre">Mensaje:</label>
+                        </div>
+                        <div class="col-md-11">
+                            <textarea class="form-control" id="mensaje" name="mensaje"
+                                placeholder="Ingrese el mensaje/comentario que desea enviar" rows="4"
+                                required="required" data-validation-required-message="Ingrese un mensaje."></textarea>
+                            <br>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-xl text-uppercase inicial" id="submit"
+                            type="submit">Enviar</button>
+                    </div>
+                </form>
+                <button class="btn btn-primary btn-xl text-uppercase inicial" id="boton" value="bloque-1"
+                    type="reset">Escribir</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">in Protein we Trust © ProBar Website 2020</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lcsanche/?hl=es-la"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#!">Politicas de Privacidad</a>
+                    <a href="adminLTE/View/login.html" target="_blank">Iniciar Sesión</a>
                 </div>
             </div>
         </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- menu-->
+    <div class="portfolio-modal modal fade" id="menuimg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
                 </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        
-        <!-- MAPA LEAFLET-->
-       <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <!-- menu-->
-        <script src="menu.js"></script>
-        <!-- INTRO JS-->
-        <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
 
-        <script src="js/menu.js"></script>
-        
 
-    </body>
+                                <img class="img-fluid d-block mx-auto" src="img/menu.JPG" alt="" />
+
+                                <ul class="list-inline">
+
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--promociones -->>
+    <div class="portfolio-modal modal fade" id="promocionesimg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+
+
+                                <img class="img-fluid d-block mx-auto" src="img/promociones.JPG" alt="" />
+
+                                <ul class="list-inline">
+
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--horarios-->
+    <div class="portfolio-modal modal fade" id="horariosimg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+
+
+                                <img class="img-fluid d-block mx-auto" src="img/horarios.JPG" alt="" />
+
+                                <ul class="list-inline">
+
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- MAPA LEAFLET-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- menu-->
+    <script src="menu.js"></script>
+    <!-- INTRO JS-->
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
+    <script src="js/menu.js"></script>
+
+
+</body>
+
 </html>
