@@ -11389,7 +11389,7 @@ div.modal-content{
 section#menu{
   height: 100%;
 }
-/*------------------------------------------------------Css escrito por nosotros----------------------------------------------------*/
+
 #mapa{
   height: 500px;
   margin-top: 60px;
@@ -11423,6 +11423,7 @@ input, select, textarea{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
+  
 }
 
 @media (max-width: 800px) {
@@ -11430,12 +11431,7 @@ input, select, textarea{
     width: 85%;
   }
 
-  #menub{
-    -webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-  }
-
+  
   #promociones,
   #horarios {
     font-size: 2rem;
@@ -11448,6 +11444,7 @@ input, select, textarea{
   margin: 15px;
   padding: 10px;
   columns: 2;
+  
 }
 
 .textodiv{
@@ -11459,7 +11456,8 @@ width: 80%;
   font-size: 17px;
   font-style:  cursive;
   width: 50%;
-  text-align: left; 
+  text-align: left;
+ 
 }
 
 .textodiv>h2{
