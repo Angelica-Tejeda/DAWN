@@ -19,7 +19,7 @@ buscador.addEventListener('input',function(event){
         //item.style.flex = "nowrap"
         cont++;
         if(cont%2!=0 ){
-          fondo.style.display = ""
+          fondo.style.display = "inline"
         }
       }
       else{
