@@ -738,82 +738,6 @@ pre code {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
-/*----------Arreglando el Responsive----------*/
-
-.text-justify .col-md-6 img{
-  position: relative;
-  width: 100%;
-}
-
-/*----------Inicio Metodo Stepper----------*/
-#bloque-1.inicial,
-#bloque-2.inicial,
-#bloque-3.inicial,
-#bloque-4.inicial,
-#bloque-5.inicial,
-#bloque-6.inicial {
-  z-index: -1;
-  position: relative;
-  transform:translate(0,0px);
-}
-
-#bloque-1.final,
-#bloque-2.final,
-#bloque-3.final,
-#bloque-4.final,
-#bloque-5.final,
-#bloque-6.final {
-  z-index: 0;
-  position: relative;
-  animation: bajar-bloque 0.6s steps(90) both;
-}
-
-
-@keyframes bajar-bloque {
-  from { transform:translate(0, 0px);}
-  to { transform:translate(0, 5px);}
-}
-
-#boton.inicial {
-  transform:translate(0, -500px);
-}
-
-@keyframes bajar-boton-1 {
-  from { transform:translate(0, -500px);}
-  to { transform:translate(0, -350px);}
-}
-
-@keyframes bajar-boton-2 {
-  from { transform:translate(0, -350px);}
-  to { transform:translate(0, -200px);}
-}
-
-
-#boton.primero {
-  animation: bajar-boton-1 0.6s steps(90) both;
-}
-
-#boton.segundo {
-  animation: bajar-boton-2 0.6s steps(90) both;
-}
-
-#submit.inicial{
-  z-index: -1;
-  position: relative;
-  transform:translate(0, -130px);
-}
-
-@keyframes bajar-boton-enviar {
-  from { transform:translate(0, -130px);}
-  to { transform:translate(0, 0px);}
-}
-
-#submit.final {
-  z-index: 0;
-  position: relative;
-  animation: bajar-boton-enviar 0.6s steps(90) both;
-}
-/*---------- Fin Metodo Stepper----------*/
 
 .col {
   flex-basis: 0;
@@ -11456,26 +11380,27 @@ section#menu div.text-center .portfolio-link{
  
 }
 
-  div.modal-content{
+div.modal-content{
 
   background: rgba(3, 5, 3, 0.1); 
   
 }
 
- section#menu{
-   height: 100%;
- }
+section#menu{
+  height: 100%;
+}
+/*------------------------------------------------------Css escrito por nosotros----------------------------------------------------*/
+#mapa{
+  height: 500px;
+  margin-top: 60px;
+}
 
- #mapa{
-   height: 500px;
-   margin-top: 60px;
- }
- #btnMapa{
-   margin-top: 70px;
-   margin-bottom: 0;
- }
+#btnMapa{
+  margin-top: 70px;
+  margin-bottom: 0;
+}
 
- #myInput {
+#myInput {
   background-position: 10px 10px;
   background-color: #121416;
   background-repeat: no-repeat;
@@ -11527,32 +11452,104 @@ input, select, textarea{
 
 .textodiv{
 width: 80%;
-  
 }
+
 .textodiv>h3{
   color: rgb(112, 112, 112);
   font-size: 17px;
   font-style:  cursive;
   width: 50%;
-  text-align: left;
-  
+  text-align: left; 
 }
+
 .textodiv>h2{
   font-size: 35px;
   font-family: cursive;
   text-align: left;
 }
 
-
-
 .imagenesmenu{
   width: 100px;
   height: 100px;
   margin: auto;
- 
 }
-.imagenesmenu>img{
 
+.imagenesmenu>img{
   width: 100px;
   height: 100px;
+}
+
+.text-justify .col-md-6 img{
+  position: relative;
+  width: 100%;
+}
+
+/*----------Inicio Metodo Stepper----------*/
+
+#bloque-1.inicial,
+#bloque-2.inicial,
+#bloque-3.inicial,
+#bloque-4.inicial,
+#bloque-5.inicial,
+#bloque-6.inicial {
+  /*z-index: -1;
+  position: relative;
+  transform:translate(0,0px);*/
+  display: none;
+}
+
+#bloque-1.final,
+#bloque-2.final,
+#bloque-3.final,
+#bloque-4.final,
+#bloque-5.final,
+#bloque-6.final {
+  /*z-index: 0;
+  position: relative;*/
+  animation: bajar-bloque 0.6s steps(90) both;
+}
+
+@keyframes bajar-bloque {
+  from { transform:translate(0, 0px);}
+  to { transform:translate(0, 5px);}
+}
+
+#boton.inicial {
+  transform:translate(0, 10px);
+}
+
+@keyframes bajar-boton-1 {
+  from { transform:translate(0, 10px);}
+  to { transform:translate(0, 20px);}
+}
+
+@keyframes bajar-boton-2 {
+  from { transform:translate(0, -350px);}
+  to { transform:translate(0, -200px);}
+}
+
+/*  
+#boton.primero {
+  animation: bajar-boton-1 0.6s steps(90) both;
+}
+/*
+#boton.segundo {
+  animation: bajar-boton-2 0.6s steps(90) both;
+}*/
+
+#submit.inicial{
+  z-index: -1;
+  position: relative;
+  /*transform:translate(0, -130px);*/
+}
+/*
+@keyframes bajar-boton-enviar {
+  from { transform:translate(0, -130px);}
+  to { transform:translate(0, 0px);}
+}*/
+
+#submit.final {
+  z-index: 0;
+  position: relative;
+  animation: bajar-boton-enviar 0.6s steps(90) both;
 }
