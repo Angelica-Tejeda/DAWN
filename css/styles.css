@@ -11443,21 +11443,11 @@ input, select, textarea{
 }
 
 .menud{
-<<<<<<< HEAD
-
-
-margin: 5px;
-padding: 10px;
-
-
-
-=======
   display: flex;
   width: 100%;
   margin: 15px;
   padding: 10px;
   columns: 2;
->>>>>>> 184c75c45d516608f6f8315c1615353dea9a7179
 }
 
 .textodiv{
@@ -11501,10 +11491,8 @@ width: 80%;
 #bloque-3.inicial,
 #bloque-4.inicial,
 #bloque-5.inicial,
-#bloque-6.inicial {
-  /*z-index: -1;
-  position: relative;
-  transform:translate(0,0px);*/
+#bloque-6.inicial,
+#submit.inicial {
   display: none;
 }
 
@@ -11513,9 +11501,8 @@ width: 80%;
 #bloque-3.final,
 #bloque-4.final,
 #bloque-5.final,
-#bloque-6.final {
-  /*z-index: 0;
-  position: relative;*/
+#bloque-6.final,
+#submit.final {
   animation: bajar-bloque 0.6s steps(90) both;
 }
 
@@ -11526,40 +11513,4 @@ width: 80%;
 
 #boton.inicial {
   transform:translate(0, 10px);
-}
-
-@keyframes bajar-boton-1 {
-  from { transform:translate(0, 10px);}
-  to { transform:translate(0, 20px);}
-}
-
-@keyframes bajar-boton-2 {
-  from { transform:translate(0, -350px);}
-  to { transform:translate(0, -200px);}
-}
-
-/*  
-#boton.primero {
-  animation: bajar-boton-1 0.6s steps(90) both;
-}
-/*
-#boton.segundo {
-  animation: bajar-boton-2 0.6s steps(90) both;
-}*/
-
-#submit.inicial{
-  z-index: -1;
-  position: relative;
-  /*transform:translate(0, -130px);*/
-}
-/*
-@keyframes bajar-boton-enviar {
-  from { transform:translate(0, -130px);}
-  to { transform:translate(0, 0px);}
-}*/
-
-#submit.final {
-  z-index: 0;
-  position: relative;
-  animation: bajar-boton-enviar 0.6s steps(90) both;
 }
