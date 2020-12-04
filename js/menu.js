@@ -27,6 +27,11 @@ buscador.addEventListener('input',function(event){
       }
       console.log(cont)
     }
+  }else{
+    for(let item of burbujas){
+      item.style.display = ""
+      fondo.style.display = ""
+    }
   }
 });
 
