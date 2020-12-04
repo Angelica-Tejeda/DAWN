@@ -3,14 +3,14 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
-(function ($) {
+    (function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
+                this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -58,45 +58,35 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     if (document.getElementById('mapa')) {
-        var map = L.map('mapa').setView([-2.118449462866232, -79.90047040963124], 17);
+      var map = L.map('mapa').setView([-2.118449462866232, -79.90047040963124], 17);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
-        L.marker([-2.118449462866232, -79.90047040963124]).addTo(map)
-            .bindPopup(' Probar')
-            .openPopup();
+      L.marker([-2.118449462866232, -79.90047040963124]).addTo(map)
+        .bindPopup(' Probar')
+        .openPopup();
     }
 
     let info = document.querySelector('#info');
-    let intro = introJs();
-    intro.setOptions({
-        steps: [{
-            intro: "Hello world!"
-        }, {
-            element: document.querySelector('#nosotros'),
-            intro: "Quieres saber más sobre nosotros?"
-        }]
-    });
-
-    info.addEventListener('click', () => {
-        intro.start();
-    });
-
+    info.addEventListener('click',()=>{
+        introJs().start();
+    })
+    
 });
 
 var boton = document.querySelector("#boton");
 
-boton.addEventListener("click", function () {
+boton.addEventListener("click", function() {
     let clase = "row align-items-stretch mb-4 final";
 
-    if (boton.textContent == "Escribir") {
+    if(boton.textContent == "Escribir"){
         boton.value = "bloque-2";
         boton.textContent = "Siguiente";
         var bloque1 = document.querySelector("#bloque-1");
         bloque1.className = clase;
-        //boton.className = "btn btn-primary btn-xl text-uppercase primero";
+        boton.className = "btn btn-primary btn-xl text-uppercase primero";
     } else {
         if (boton.value == "bloque-2") {
             boton.value = "bloque-3";
@@ -110,7 +100,7 @@ boton.addEventListener("click", function () {
             boton.value = "bloque-5";
             var bloque2 = document.querySelector("#bloque-4");
             bloque2.className = clase;
-            //boton.className = "btn btn-primary btn-xl text-uppercase segundo";
+            boton.className = "btn btn-primary btn-xl text-uppercase segundo";
         } else if (boton.value == "bloque-5") {
             boton.value = "bloque-6";
             var bloque2 = document.querySelector("#bloque-5");
