@@ -11359,6 +11359,17 @@ section#menu div.container{
     margin: 10px;
     
   }
+  #menub{
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    display:inline;
+  
+    
+  }
+}
+div.col.col-md-6{
+  size: 0ch;
 }
 
 section#menu div.text-center{
@@ -11423,10 +11434,7 @@ input, select, textarea{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
+  flex-flow: column wrap;
   
 }
 
@@ -11440,15 +11448,30 @@ input, select, textarea{
   #horarios {
     font-size: 2rem;
   }
+
+  div.container.bottom{
+    display: none;
+  }
+
 }
 
+img#imagenSobreNosotros{
+  height: 75%;
+  width: 75%;
+  
+}
+p.text-muted{
+  font-size: 25px;
+}
+ 
 .menud{
   display: flex;
   width: 100%;
   margin: 15px;
   padding: 10px;
   columns: 2;
-  
+  border: solid 1px;
+  border-color: yellow;
 }
 
 .textodiv{
@@ -11457,7 +11480,7 @@ width: 80%;
 
 .textodiv>h3{
   color: rgb(112, 112, 112);
-  font-size: 17px;
+  font-size: 16px;
   font-style:  cursive;
   width: 50%;
   text-align: left;
@@ -11623,4 +11646,9 @@ width: 80%;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+
+}
+
+img#imagenSobreNosotros{
+ background-color: yellow;
 }
