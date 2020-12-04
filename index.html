@@ -164,37 +164,36 @@
             </div>
         </section>
         <!--Menu y Promociones-->
-        <h1>Menu</h1>
-        <div class="col-12 mt-2">
-            <input type="text" id="myInput" placeholder="Buscar por comida" title="ingresar texto">
-        </div>    
-        <div id="menub" class="container-fluid m-0" >
-            
-       
-         
-        </div>
         <section class="page-section" id="menu">
+            <div id="buscador">
+                <h1>Menu</h1>
+                <div class="col-12 mt-2">
+                    <input type="text" id="myInput" placeholder="Buscar por comida" title="ingresar texto">
+                </div>    
+                <div id="menub" class="container-fluid m-0" >
+                    <!--Aqui se agregan los div de los platillos-->
+                </div>
+            </div>                        
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">promociones</h2>
-                    <h3 class="section-subheading text-muted">¡Disfruta nuestras fantásticas promociones!</h3>
+                    <h2 id="promociones" class="section-heading text-uppercase">promociones</h2>
+                    <h3 class="section-subheading text-muted">disfruta nuestras fantasticas promociones!!</h3>
                    
                     <a class="portfolio-link" data-toggle="modal" href="#promocionesimg">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-tags-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="100px" height="100px" viewBox="0 0 16 16" class="bi bi-tags-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M3 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 7.586 1H3zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                                     <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
                                 </svg>
                             </div>
-                        
                         </div>
                       promociones
                     </a>
                 </div>
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">HORARIOS</h2>
-                    <h3 class="section-subheading text-muted">¡Nuestros horarios para tu atención!</h3>
+                    <h2 id="horarios" class="section-heading text-uppercase">HORARIOS</h2>
+                    <h3 class="section-subheading text-muted">Nuestros horarios para tu atencion!</h3>
                     <a class="portfolio-link" data-toggle="modal" href="#horariosimg">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -205,11 +204,8 @@
                         </div>
                        horarios
                     </a>
-                </div>
-                
+                </div>     
             </div>
-
-            
         </section>
         <!--MAPA-->
         <section class="page-section bg-our-gray" id="irMapa">
