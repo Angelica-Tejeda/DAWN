@@ -68,6 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
         .bindPopup(' Probar')
         .openPopup();
     }
+
+    let info = document.querySelector('#info');
+    info.addEventListener('click',()=>{
+        introJs().start();
+    })
+    
 });
 
 var boton = document.querySelector("#boton");
@@ -80,7 +86,7 @@ boton.addEventListener("click", function() {
         boton.textContent = "Siguiente";
         var bloque1 = document.querySelector("#bloque-1");
         bloque1.className = clase;
-        //boton.className = "btn btn-primary btn-xl text-uppercase primero";
+        boton.className = "btn btn-primary btn-xl text-uppercase primero";
     } else {
         if (boton.value == "bloque-2") {
             boton.value = "bloque-3";
@@ -94,7 +100,7 @@ boton.addEventListener("click", function() {
             boton.value = "bloque-5";
             var bloque2 = document.querySelector("#bloque-4");
             bloque2.className = clase;
-            //boton.className = "btn btn-primary btn-xl text-uppercase segundo";
+            boton.className = "btn btn-primary btn-xl text-uppercase segundo";
         } else if (boton.value == "bloque-5") {
             boton.value = "bloque-6";
             var bloque2 = document.querySelector("#bloque-5");

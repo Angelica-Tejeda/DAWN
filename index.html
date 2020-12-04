@@ -13,11 +13,14 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div data-step="10" data-intro="¡ Eso es todo, estás listo para empezar a navegar!" id="final"></div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -34,6 +37,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#irMapa">Ubicacion</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactanos">Contacto</a></li>
+                        <li class="nav-item"><a data-step="1" data-intro="¡Bienvenido a la visita guiada! Te mostraremos las secciones de nuestra página." id="info" class="nav-link js-scroll-trigger" href="#"><i class="fas fa-info-circle"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -48,9 +52,9 @@
         </header>
         <!-- Sobre Nosotros-->
         <section class="page-section" id="nosotros">
-            <div class="container">
+            <div  class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Sobre Nosotros</h2>
+                    <h2 data-step="2" data-intro="Aquí encontrarás información sobre nuestro local" class="section-heading text-uppercase">Sobre Nosotros</h2>
                 </div>
                 <div class="row text-justify">
                     <div class="col-md-6">
@@ -72,7 +76,7 @@
         <section class="page-section bg-our-gray" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h2 data-step="3" data-intro="texto xd" class="section-heading text-uppercase">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
@@ -166,7 +170,7 @@
         <!--Menu y Promociones-->
         <section class="page-section" id="menu">
             <div id="buscador">
-                <h1>Menu</h1>
+                <h1 data-step="4" data-intro="Aquí encontrarás nuestro delicioso menú" >Menu</h1>
                 <div class="col-12 mt-2">
                     <input type="text" id="myInput" placeholder="Buscar por comida" title="ingresar texto">
                 </div>    
@@ -176,7 +180,7 @@
             </div>                        
             <div class="container">
                 <div class="text-center">
-                    <h2 id="promociones" class="section-heading text-uppercase">promociones</h2>
+                    <h2 data-step="5" data-intro="Aquí encontrarás información sobre nuestras últimas promociones" id="promociones" class="section-heading text-uppercase">promociones</h2>
                     <h3 class="section-subheading text-muted">disfruta nuestras fantasticas promociones!!</h3>
                    
                     <a class="portfolio-link" data-toggle="modal" href="#promocionesimg">
@@ -192,7 +196,7 @@
                     </a>
                 </div>
                 <div class="text-center">
-                    <h2 id="horarios" class="section-heading text-uppercase">HORARIOS</h2>
+                    <h2 data-step="6" data-intro="Aquí podrás ver nuestros horarios de atención" id="horarios" class="section-heading text-uppercase">HORARIOS</h2>
                     <h3 class="section-subheading text-muted">Nuestros horarios para tu atencion!</h3>
                     <a class="portfolio-link" data-toggle="modal" href="#horariosimg">
                         <div class="portfolio-hover">
@@ -210,7 +214,7 @@
         <!--MAPA-->
         <section class="page-section bg-our-gray" id="irMapa">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Ubicacion</h2>
+                <h2  data-step="7" data-intro="¿Deseas saber dónde nos encontramos?" class="section-heading text-uppercase">Ubicacion</h2>
                 <div id="mapa" class="mapa"></div></div>   
                 <a class="btn btn-primary btn-xl btn-prin text-uppercase js-scroll-trigger" href="https://goo.gl/maps/SWnSVC3QtyH2FHAV8" id="btnMapa" target="_blank">Abrir en google maps</a>
         </section>
@@ -220,7 +224,7 @@
         <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Nuestro Increible Equipo</h2>
+                    <h2  data-step="8" data-intro="¿Quieres conocer a nuestros desarrolladores?" class="section-heading text-uppercase">Nuestro Increible Equipo</h2>
                     <h3 class="section-subheading text-muted">Creando los mejores diseños interactivos.</h3>
                 </div>
                 <div class="row">
@@ -259,7 +263,7 @@
         <section class="page-section bg-our-gray" id="contacto">
             <div class="container">
                 <div id="cabecera-contactanos" class="text-center">
-                    <h2 class="section-heading text-uppercase">Contacto</h2>
+                    <h2  data-step="9" data-intro="¿Tienes alguna duda, consulta o requerimiento? ¡Escríbenos, estaremos encantados de atenderte!" class="section-heading text-uppercase">Contacto</h2>
                     <h3 class="section-subheading text-muted">Escribenos un mensaje y nosotros resolveremos tu inquietudes.</h3>
                 </div>
                 <div id="formulario-steps" class="inicial">
@@ -619,6 +623,10 @@
         <!-- MAPA LEAFLET-->
        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <!-- menu-->
+        <script src="menu.js"></script>
+        <!-- INTRO JS-->
+        <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
         <script src="js/menu.js"></script>
         
 

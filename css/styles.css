@@ -11516,3 +11516,10 @@ width: 80%;
 #boton.inicial {
   transform:translate(0, 10px);
 }
+
+#final{
+  position: relative;
+  left: 40%;
+  height: 0;
+  width: 0;
+}
