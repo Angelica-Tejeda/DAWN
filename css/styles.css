@@ -738,29 +738,14 @@ pre code {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
+/*----------Arreglando el Responsive----------*/
 
-.text-justify .col-md-6 {
+.text-justify .col-md-6 img{
   position: relative;
   width: 100%;
-  padding-top: 2rem;
-  padding-right: 5rem;
-  padding-left: 5rem;
 }
 
 /*----------Inicio Metodo Stepper----------*/
-/*#contactanos {
-  height: 800px;
-}
-
-#cabecera-contactanos{
-  z-index: 1;
-  height: 15%;
-  width: 100%;
-  position: relative;
-  background-color: #1F2021;
-  padding: 10px 150px 10px 25px;
-}*/
-
 #bloque-1.inicial,
 #bloque-2.inicial,
 #bloque-3.inicial,
@@ -828,66 +813,6 @@ pre code {
   position: relative;
   animation: bajar-boton-enviar 0.6s steps(90) both;
 }
-
-/*@keyframes bajar-bloque-1 {
-  from { transform:translate(0,15px);}
-  to { transform:translate(0,130px);}
-}
-
-@keyframes bajar-bloque-2 {
-  from { transform:translate(0,120px);}
-  to { transform:translate(0,130px);}
-}
-
-@keyframes bajar-bloque-3 {
-  from { transform:translate(0,100px);}
-  to { transform:translate(0,120px);}
-}
-
-@keyframes bajar-bloque-4 {
-  from { transform:translate(0,100px);}
-  to { transform:translate(0,125px);}
-}
-
-@keyframes bajar-bloque-5 {
-  from { transform:translate(0,100px);}
-  to { transform:translate(0,130px);}
-}
-
-@keyframes bajar-bloque-6 {
-  from { transform:translate(0,100px);}
-  to { transform:translate(0,135px);}
-}
-
-#bloque-1.final {
-  animation: bajar-bloque-1 0.8s steps(90) both;
-}
-
-#bloque-2.final {
-  animation: bajar-bloque-2 0.8s steps(90) both;
-}
-
-#bloque-3.final {
-  animation: bajar-bloque-3 0.8s steps(90) both;
-}
-
-#bloque-4.final {
-  animation: bajar-bloque-4 0.8s steps(90) both;
-}
-
-#bloque-5.final {
-  animation: bajar-bloque-5 0.8s steps(90) both;
-}
-
-#bloque-6.final {
-  animation: bajar-bloque-6 0.8s steps(90) both;
-}
-
-#boton {
-  padding-bottom: 25px  ;
-  transform:translate(0, -500px);
-}*/
-
 /*---------- Fin Metodo Stepper----------*/
 
 .col {
@@ -11254,11 +11179,8 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: 100% ;
 }
-
-
-
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11274,6 +11196,13 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bottom{
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
